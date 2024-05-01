@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Inter, Lato } from "next/font/google";
 import Script from "next/script";
 import Footer from "./components/Footer";
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <Analytics />
       </body>
       <Script id="worklet">
         {`if (window && CSS.paintWorklet)
