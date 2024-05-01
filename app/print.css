@@ -1,0 +1,64 @@
+/* @page {
+  div:not(.test) {
+    display: none;
+  }
+}
+
+div {
+  display: none;
+} */
+/*
+@media print {
+  nav {
+    display: none;
+  }
+}
+
+@media print {
+  nav {
+    display: none !important;
+  }
+  .test {
+    height: 100%;
+    width: 100%;
+    position: fixed !important;
+    background-color: red;
+    top: 0;
+  }
+} */
+.print-container {
+  width: 210mm;
+  margin: auto;
+  box-shadow: 0 0 5px #ccc;
+}
+@media print {
+  body {
+    visibility: hidden;
+  }
+  .print-container {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: none;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+}
+@page :first {
+  margin-top: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+  /* ... the rest of the rules ... */
+}

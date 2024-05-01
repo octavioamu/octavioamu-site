@@ -8,26 +8,131 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+html {
+  overscroll-behavior-y: none;
+  overflow: auto;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-  }
+  } */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.box-shape {
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+/* // bauhaus */
+@property --pattern-seed {
+  syntax: "<number>";
+  initial-value: 1000;
+  inherits: true;
+}
+
+@property --pattern-colors {
+  syntax: "<color>#";
+  initial-value: #2d58b5, #ffecdc, #f9c50e, #f43914, #000;
+  inherits: true;
+}
+
+@property --pattern-size {
+  syntax: "<number>";
+  initial-value: 1024;
+  inherits: true;
+}
+
+@property --pattern-detail {
+  syntax: "<number>";
+  initial-value: 15;
+  inherits: true;
+}
+
+.worklet-canvas {
+  width: 100%;
+  height: 400px;
+  background-color: #ffecdc;
+  background-image: paint(bauhausPattern);
+  /*   animation: animate-seed .4s ease-out 2 alternate; */
+}
+.worklet-canvas {
+  /*     animation: 1ms linear infinite animate-seed; */
+  animation-name: animate-seed;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  animation-direction: alternate;
+
+  animation-timing-function: linear;
+  /*   animation-timing-function: steps(10, end); */
+  animation-timeline: scroll(block nearest);
+  /*   --pattern-seed: 1001; */
+  /* position: fixed; */
+}
+
+@keyframes animate-seed {
+  0% {
+    --pattern-seed: 1000;
+    /*     --pattern-detail: 25; */
+  }
+
+  100% {
+    --pattern-seed: 1050;
+
+    /*     --pattern-detail: 1; */
+  }
+}
+
+/* @page {
+  *:not(.test) {
+    display: none;
+  }
+} */
+
+/* @media print {
+  nav {
+    display: none !important;
+  }
+  .test {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: red;
+  }
+} */
+
+@keyframes showAnimation {
+  from {
+    transform: scale(0.7);
+    opacity: 0.1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scroll-tl {
+  will-change: transform;
+  animation-name: showAnimation;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  animation-timeline: view(block 100% 0%);
+  animation-timing-function: linear;
 }
