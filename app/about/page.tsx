@@ -20,13 +20,13 @@ export default function About() {
       <div className="grid grid-cols-2 gap-4 items-center">
         <div className="leading-7 space-y-3">
           <p>
-            I'm a front-end developer with over a decade of experience, always
-            hungry to learn more. I've called Argentina, Spain, and now Belo
-            Horizonte, Brazil, home. I've worked on projects for both small
-            businesses and big names.
+            I&apos;m a front-end developer with over a decade of experience,
+            always hungry to learn more. I&apos;ve called Argentina, Spain, and
+            now Belo Horizonte, Brazil, home. I&apos;ve worked on projects for
+            both small businesses and big names.
           </p>
           <p>
-            Since 2018, I've been diving into web3 companies, exploring the
+            Since 2018, I&apos;ve been diving into web3 companies, exploring the
             cutting edge. I initially studied graphic design to boost the visual
             appeal of my development work.
           </p>

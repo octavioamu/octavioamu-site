@@ -40,13 +40,13 @@ export default function Resume() {
         </div>
         <div className="p-8">
           <p>
-            I'm a front-end developer with over a decade of experience, always
-            hungry to learn more. I've called Argentina, Spain, and now Belo
-            Horizonte, Brazil, home. I've worked on projects for both small
-            businesses and big names.
+            I&apos;m a front-end developer with over a decade of experience,
+            always hungry to learn more. I&apos;ve called Argentina, Spain, and
+            now Belo Horizonte, Brazil, home. I&apos;ve worked on projects for
+            both small businesses and big names.
           </p>
           <p>
-            Since 2018, I've been diving into web3 companies, exploring the
+            Since 2018, I&apos;ve been diving into web3 companies, exploring the
             cutting edge. I initially studied graphic design to boost the visual
             appeal of my development work.
           </p>
@@ -72,8 +72,10 @@ export default function Resume() {
             <div>Graphic Design · (2012 - 2013)</div>
           </div>
           <div className="mb-3">
-            <div className="italic">Universidad Empresarial 'Siglo 21'</div>
-            <div>Bachelor's degree in advertising · (2003 - 2003)</div>
+            <div className="italic">
+              Universidad Empresarial &apos;Siglo 21&apos;
+            </div>
+            <div>Bachelor&apos;s degree in advertising · (2003 - 2003)</div>
           </div>
         </div>
       </div>

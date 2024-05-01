@@ -44,7 +44,7 @@ const ShapePath = ({
     () => getPath([0, 0, 100, 0, 100, 100, 0, 100], max),
     [max]
   );
-  console.log(polygon);
+
   if (!hasMounted) return null;
   return (
     <div

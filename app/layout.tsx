@@ -28,7 +28,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      <Script>
+      <Script id="worklet">
         {`if (window && CSS.paintWorklet)
         {CSS.paintWorklet?.addModule("bauhaus.js")}`}
       </Script>

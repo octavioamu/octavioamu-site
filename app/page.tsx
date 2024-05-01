@@ -18,8 +18,8 @@ export default function Home() {
         <div className=" 2xl:w-8/12 m-auto  flex-col lg:flex-row items-center gap-14 flex-nowrap grid grid-cols-1 lg:grid-cols-2">
           <div className="text-2xl leading-9 font-bold space-y-3">
             <p>
-              I'm a creative developer lately working with web3 and all kind of
-              technology.
+              I&apos;m a creative developer lately working with web3 and all
+              kind of technology.
             </p>
             <p>
               I wrote my first HTML in 2002 and, what once looked like a hobby
