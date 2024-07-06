@@ -1,4 +1,4 @@
-import { JobList } from "../data/jobData";
+import { calculateTimeDifference, JobList } from "../data/jobData";
 
 const TimelineCard = ({
   job,
@@ -29,7 +29,8 @@ const TimelineCard = ({
           <p className="text-xs">{job.company?.join(" / ")}</p>
         </div>
         <p className="md:ml-auto text-xs italic self-start leading-relaxed">
-          {job.startDate} - {job.endDate} - {job.duration}
+          {job.startDate} - {job.endDate} -{" "}
+          {calculateTimeDifference(job.startDate, job.endDate)}
         </p>
       </div>
 

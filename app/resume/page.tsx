@@ -57,9 +57,12 @@ export default function Resume() {
         </div>
 
         <div className="px-8 mb-8">
-          {jobList?.map((job) => (
-            <JobCard key={job.id} job={job} />
-          ))}
+          {jobList
+            ?.slice()
+            .reverse()
+            .map((job) => (
+              <JobCard key={job.id} job={job} />
+            ))}
         </div>
         <div className="px-8 mb-4 text-sm">
           <h2 className="text-lg mb-2 font-bold">Languages</h2>

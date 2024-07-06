@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { JobList } from "../data/jobData";
+import { calculateTimeDifference, JobList } from "../data/jobData";
 
 const JobCard = ({ job, className }: { job: JobList; className?: string }) => {
   // console.log(job);
@@ -24,7 +24,8 @@ const JobCard = ({ job, className }: { job: JobList; className?: string }) => {
           <p className="text-xs">{job.company?.join(" / ")}</p>
         </div>
         <p className="ml-auto text-xs italic self-start leading-relaxed">
-          {job.startDate} - {job.endDate} - {job.duration}
+          {job.startDate} - {job.endDate} (
+          {calculateTimeDifference(job.startDate, job.endDate)})
         </p>
       </div>
 

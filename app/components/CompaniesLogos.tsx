@@ -4,6 +4,13 @@ const CompaniesLogos = () => {
     <div className="flex justify-around px-8 flex-wrap">
       <Image
         className="rounded-full shadow-lg p-2"
+        src="/companies/logo-pump.png"
+        width={100}
+        height={100}
+        alt="pump"
+      />
+      <Image
+        className="rounded-full shadow-lg p-2"
         src="/companies/logo-mantle.png"
         width={100}
         height={100}

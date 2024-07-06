@@ -1,6 +1,145 @@
 const jobList = [
   {
     id: 1,
+    title: "Mid Front End Developer",
+    company: ["Bolt"],
+    companyLogos: [
+      {
+        src: "/companies/logo-bolt.png",
+        alt: "Bolt Logo",
+      },
+    ],
+    startDate: "2011-11",
+    endDate: "2012-10",
+    duration: "2 years 4 months",
+    description: [
+      "Sites and apps development",
+      "Facebook apps",
+      "Wordpress sites for big clients",
+    ],
+    skills: ["JavaScript", "PHP", "WordPress"],
+    projects: [],
+  },
+  {
+    id: 2,
+    title: "Front End Developer",
+    company: ["Bhtec - USIMINAS"],
+    companyLogos: [
+      {
+        src: "/companies/logo-bhtec.png",
+        alt: "Bhtec Logo",
+      },
+    ],
+    startDate: "2012-10",
+    endDate: "2013-03",
+    duration: "3 years",
+    description: [
+      "Develop internal products and features",
+      "Design of features and products",
+    ],
+    skills: ["JavaScript"],
+    projects: [],
+  },
+  {
+    id: 3,
+    title: "Senior Front End Developer",
+    company: ["Innvent", "EloGroup"],
+    companyLogos: [
+      {
+        src: "/companies/logo-innvent.png",
+        alt: "Innvent Logo",
+      },
+      {
+        src: "/companies/logo-elogroup.png",
+        alt: "EloGroup Logo",
+      },
+    ],
+    startDate: "2013-03",
+    endDate: "2014-11",
+    duration: "1 year 9 months",
+    description: [
+      "Products development",
+      "Landing pages and hotsites",
+      "Clients systems",
+    ],
+    skills: ["JavaScript", "Node", "Ruby on Rails", "Python", "PHP"],
+    projects: [],
+  },
+  {
+    id: 4,
+    title: "Senior Front End Developer",
+    company: ["Construct LATAM"],
+    companyLogos: [
+      {
+        src: "/companies/logo-construct.png",
+        alt: "Construct Logo",
+      },
+    ],
+    startDate: "2014-12",
+    endDate: "2016-09",
+    duration: "1 year 10 months",
+    description: [
+      "Platform development in AngularJS and landing page",
+      "Platform Design",
+      "Product development in React",
+    ],
+    skills: ["JavaScript", "AngularJS", "React", "Node"],
+    projects: [],
+  },
+  {
+    id: 5,
+    title: "CTO",
+    company: ["Vulpi"],
+    companyLogos: [
+      {
+        src: "/companies/logo-vulpi.png",
+        alt: "Vulpi Logo",
+      },
+    ],
+    startDate: "2016-10",
+    endDate: "2018-04",
+    duration: "1 year 7 months",
+    description: [
+      "Co-Founder",
+      "Management of the development team",
+      "Platform development in AngularJS and landing page",
+      "Platform Design and management",
+      "New platform build with VueJS",
+    ],
+    skills: ["JavaScript", "AngularJS", "VueJS", "Node", "Django"],
+    projects: [],
+  },
+  {
+    id: 6,
+    title: "Senior Software Engineer",
+    company: ["Gitcoin", "ConsenSys"],
+    companyLogos: [
+      {
+        src: "/companies/logo-gitcoin.png",
+        alt: "Gitcoin Logo",
+      },
+      {
+        src: "/companies/logo-consensys.png",
+        alt: "Consensys Logo",
+      },
+    ],
+    startDate: "2018-11",
+    endDate: "2021-10",
+    duration: "3 years",
+    description: [
+      "Development and features",
+      "Introduced VueJS and end up migrating all front end into it together with Django on backend",
+    ],
+    skills: ["JavaScript", "VueJS", "jQuery", "Django"],
+    projects: [
+      {
+        title: "Old Gitcoin repo",
+        link: "https://github.com/gitcoinco/web",
+      },
+    ],
+  },
+  {
+    id: 7,
     title: "Lead Software Engineer",
     company: ["Windranger Labs", "Mantle"],
     companyLogos: [
@@ -42,143 +181,29 @@ const jobList = [
     ],
   },
   {
-    id: 2,
+    id: 8,
     title: "Senior Software Engineer",
-    company: ["Gitcoin", "ConsenSys"],
+    company: ["Pump"],
     companyLogos: [
       {
-        src: "/companies/logo-gitcoin.png",
-        alt: "Gitcoin Logo",
-      },
-      {
-        src: "/companies/logo-consensys.png",
-        alt: "Consensys Logo",
+        src: "/companies/logo-pump.png",
+        alt: "Pump fun Logo",
       },
     ],
-    startDate: "2018-11",
-    endDate: "2021-10",
-    duration: "3 years",
+    startDate: "2024-05-07",
+    endDate: "Current",
+    duration: "",
     description: [
-      "Development and features",
-      "Introduced VueJS and end up migrating all front end into it together with Django on backend",
+      "Lead Front-end app development",
+      "Develop and maintain features and improvements",
     ],
-    skills: ["JavaScript", "VueJS", "jQuery", "Django"],
+    skills: ["JavaScript", "React", "Node", "NextJS", "Nestjs", "Postgres"],
     projects: [
       {
-        title: "Old Gitcoin repo",
-        link: "https://github.com/gitcoinco/web",
+        title: "Pump Site",
+        link: "https://pump.fun",
       },
     ],
-  },
-  {
-    id: 3,
-    title: "CTO",
-    company: ["Vulpi"],
-    companyLogos: [
-      {
-        src: "/companies/logo-vulpi.png",
-        alt: "Vulpi Logo",
-      },
-    ],
-    startDate: "2016-10",
-    endDate: "2018-04",
-    duration: "1 year 7 months",
-    description: [
-      "Co-Founder",
-      "Management of the development team",
-      "Platform development in AngularJS and landing page",
-      "Platform Design and management",
-      "New platform build with VueJS",
-    ],
-    skills: ["JavaScript", "AngularJS", "VueJS", "Node", "Django"],
-    projects: [],
-  },
-  {
-    id: 4,
-    title: "Senior Front End Developer",
-    company: ["Construct LATAM"],
-    companyLogos: [
-      {
-        src: "/companies/logo-construct.png",
-        alt: "Construct Logo",
-      },
-    ],
-    startDate: "2014-12",
-    endDate: "2016-09",
-    duration: "1 year 10 months",
-    description: [
-      "Platform development in AngularJS and landing page",
-      "Platform Design",
-      "Product development in React",
-    ],
-    skills: ["JavaScript", "AngularJS", "React", "Node"],
-    projects: [],
-  },
-  {
-    id: 5,
-    title: "Senior Front End Developer",
-    company: ["Innvent", "EloGroup"],
-    companyLogos: [
-      {
-        src: "/companies/logo-innvent.png",
-        alt: "Innvent Logo",
-      },
-      {
-        src: "/companies/logo-elogroup.png",
-        alt: "EloGroup Logo",
-      },
-    ],
-    startDate: "2013-03",
-    endDate: "2014-11",
-    duration: "1 year 9 months",
-    description: [
-      "Products development",
-      "Landing pages and hotsites",
-      "Clients systems",
-    ],
-    skills: ["JavaScript", "Node", "Ruby on Rails", "Python", "PHP"],
-    projects: [],
-  },
-  {
-    id: 6,
-    title: "Front End Developer",
-    company: ["Bhtec - USIMINAS"],
-    companyLogos: [
-      {
-        src: "/companies/logo-bhtec.png",
-        alt: "Bhtec Logo",
-      },
-    ],
-    startDate: "2012-10",
-    endDate: "2013-03",
-    duration: "6 months",
-    description: [
-      "Develop internal products and features",
-      "Design of features and products",
-    ],
-    skills: ["JavaScript"],
-    projects: [],
-  },
-  {
-    id: 7,
-    title: "Mid Front End Developer",
-    startDate: "2011-11",
-    endDate: "2012-10",
-    company: ["Bolt"],
-    companyLogos: [
-      {
-        src: "/companies/logo-bolt.png",
-        alt: "Bolt Logo",
-      },
-    ],
-    duration: "1 year",
-    description: [
-      "Sites and apps development",
-      "Facebook apps",
-      "Wordpress sites for big clients",
-    ],
-    skills: ["JavaScript", "PHP", "WordPress"],
-    projects: [],
   },
 ];
 
@@ -201,6 +226,48 @@ export interface CompanyLogosEntity {
 export interface ProjectsEntity {
   title: string;
   link: string;
+}
+
+export const getCurrentDate = () => {
+  const today = new Date();
+  return new Intl.DateTimeFormat("en-CA", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(today);
+};
+
+export function calculateTimeDifference(
+  startDate: string,
+  endDate: string
+): string {
+  const parseDate = (dateStr: string): Date => {
+    const [year, month, day] = dateStr.split("-").map(Number);
+    return new Date(year, (month || 1) - 1, day || 1);
+  };
+  endDate = endDate === "Current" ? getCurrentDate() : endDate;
+  let start = parseDate(startDate);
+  let end = parseDate(endDate);
+
+  let years = end.getFullYear() - start.getFullYear();
+  let months = end.getMonth() - start.getMonth() + 1;
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  if (years === 0 && months === 0) {
+    return "";
+  } else if (years === 0) {
+    return `${months} months`;
+  } else if (months === 0) {
+    return `${years} ${years === 1 ? "year" : "years"}`;
+  } else {
+    return `${years} ${years === 1 ? "year" : "years"} ${months} ${
+      months === 1 ? "month" : "months"
+    }`;
+  }
 }
 
 export default jobList;
