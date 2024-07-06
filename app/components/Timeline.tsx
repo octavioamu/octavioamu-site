@@ -8,7 +8,7 @@ const Timeline = ({ jobList }: { jobList: JobList[] }) => {
     <div className="relative">
       <div className="hidden md:block w-1 bg-orange-300 rounded absolute h-full md:left-1/2 transform -translate-x-1/2"></div>
 
-      <div className="flex flex-col gap-16 md:gap-8 md:px-8 ">
+      <div className="flex flex-col gap-16 md:gap-8 md:px-8 pt-8">
         {jobList
           .slice()
           .reverse()

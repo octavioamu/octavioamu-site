@@ -4,20 +4,22 @@ import Link from "next/link";
 const Nav = () => {
   return (
     <nav className="flex items-center justify-center flex-wrap p-6">
-      <Image
-        src="/symbol.svg"
-        alt="Octavio Amuchástegui Logo"
-        width={40}
-        height={19}
-        className="mr-auto"
-      />
-      <div className="flex items-center gap-3 place-self-center">
+      <div className="flex flex-1">
+        <Image
+          src="/symbol.svg"
+          alt="Octavio Amuchástegui Logo"
+          width={40}
+          height={19}
+          className="mr-auto"
+        />
+      </div>
+      <div className="flex items-center justify-center gap-3 flex-1">
         <Link href="/">main</Link>
         <Link href="/about">about</Link>
         <Link href="/resume">resumé</Link>
         <Link href="/posts">posts</Link>
       </div>
-      <div className="flex items-center gap-3 ml-auto">
+      <div className="flex items-center place-content-end text-right gap-3 flex-1">
         <a
           href="https://github.com/octavioamu"
           target="_blank"

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="">
       <Header />
-      <div className="bg-orange-100 box-shape py-28 px-3 lg:p-20">
+      <div className="bg-orange-100 box-shape py-28 px-8 lg:p-20">
         <div className=" 2xl:w-8/12 m-auto  flex-col lg:flex-row items-center gap-14 flex-nowrap grid grid-cols-1 lg:grid-cols-2">
           <div className="text-2xl leading-9 font-bold space-y-3">
             <p>
@@ -41,7 +41,7 @@ export default function Home() {
         <CompaniesLogos />
       </section>
 
-      <section className="container mx-auto mb-20">
+      <section className="container mx-auto mb-20 px-8">
         <h2 className="text-4xl">Lastest projects</h2>
         <p className="text-lg">Some of my last work and projects.</p>
         <div className="grid gap-8 mb-8">
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto mb-20">
+      <section className="container mx-auto mb-20 px-8">
         <div className="mb-8">
           <h2 className="text-4xl">Career Timeline</h2>
           <p className="text-lg">My job history</p>

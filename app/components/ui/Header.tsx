@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="flex items-center gap-5 py-10 lg:py-24 container mx-auto">
+    <div className="flex items-center gap-5 py-10 lg:py-24 container mx-auto justify-center">
       <Image
         src="/symbol.svg"
         alt="Vercel Logo"
