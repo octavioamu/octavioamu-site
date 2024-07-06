@@ -1,9 +1,11 @@
 import Image from "next/image";
 import ShapePath from "../components/ShapePath";
+import Header from "../components/ui/Header";
 export default function About() {
   return (
     <main className="container mx-auto">
-      <div className="flex items-center gap-5 py-10 lg:py-24 container mx-auto">
+      <Header />
+      {/* <div className="flex items-center gap-5 py-10 lg:py-24 container mx-auto">
         <Image
           src="/symbol.svg"
           alt="Vercel Logo"
@@ -16,8 +18,8 @@ export default function About() {
           <span>Octavio</span>
           <span>Amuchástegui</span>
         </div>
-      </div>
-      <div className="grid grid-cols-2 gap-4 items-center">
+      </div> */}
+      <div className="grid md:grid-cols-2 gap-4 items-center px-8">
         <div className="leading-7 space-y-3">
           <p>
             I&apos;m a front-end developer with over a decade of experience,
