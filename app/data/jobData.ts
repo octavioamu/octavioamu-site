@@ -180,31 +180,31 @@ const jobList = [
       },
     ],
   },
-  {
-    id: 8,
-    title: "Senior Software Engineer",
-    company: ["Pump"],
-    companyLogos: [
-      {
-        src: "/companies/logo-pump.png",
-        alt: "Pump fun Logo",
-      },
-    ],
-    startDate: "2024-05-07",
-    endDate: "Current",
-    duration: "",
-    description: [
-      "Lead Front-end app development",
-      "Develop and maintain features and improvements",
-    ],
-    skills: ["JavaScript", "React", "Node", "NextJS", "Nestjs", "Postgres"],
-    projects: [
-      {
-        title: "Pump Site",
-        link: "https://pump.fun",
-      },
-    ],
-  },
+  // {
+  //   id: 8,
+  //   title: "Senior Software Engineer",
+  //   company: ["Pump"],
+  //   companyLogos: [
+  //     {
+  //       src: "/companies/logo-pump.png",
+  //       alt: "Pump fun Logo",
+  //     },
+  //   ],
+  //   startDate: "2024-05-07",
+  //   endDate: "Current",
+  //   duration: "",
+  //   description: [
+  //     "Lead Front-end app development",
+  //     "Develop and maintain features and improvements",
+  //   ],
+  //   skills: ["JavaScript", "React", "Node", "NextJS", "Nestjs", "Postgres"],
+  //   projects: [
+  //     {
+  //       title: "Pump Site",
+  //       link: "https://pump.fun",
+  //     },
+  //   ],
+  // },
 ];
 
 export interface JobList {
