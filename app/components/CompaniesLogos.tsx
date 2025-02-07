@@ -2,13 +2,13 @@ import Image from "next/image";
 const CompaniesLogos = () => {
   return (
     <div className="flex justify-around px-8 flex-wrap">
-      <Image
+      {/* <Image
         className="rounded-full shadow-lg p-2"
         src="/companies/logo-pump.png"
         width={100}
         height={100}
         alt="pump"
-      />
+      /> */}
       <Image
         className="rounded-full shadow-lg p-2"
         src="/companies/logo-mantle.png"
