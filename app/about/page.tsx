@@ -22,7 +22,7 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-4 items-center px-8">
         <div className="leading-7 space-y-3">
           <p>
-            I&apos;m a front-end developer with over a decade of experience,
+            I&apos;m a full stack developer with over a decade of experience,
             always hungry to learn more. I&apos;ve called Argentina, Spain, and
             now Belo Horizonte, Brazil, home. I&apos;ve worked on projects for
             both small businesses and big names.

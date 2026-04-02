@@ -156,11 +156,11 @@ const jobList = [
     endDate: "2023-12-01",
     duration: "2 years 4 months",
     description: [
-      "Lead of the Front-end team",
+      "Lead of the Full Stack team",
       "Develop and maintain many projects",
       "Plan features and products together with other teams",
     ],
-    skills: ["JavaScript", "React", "Node", "NextJS"],
+    skills: ["JavaScript", "React", "Node", "NextJS", "MongoDB", "Postgres"],
     projects: [
       {
         title: "Mantle Delegates",
@@ -194,7 +194,7 @@ const jobList = [
     endDate: "Current",
     duration: "",
     description: [
-      "Lead Front-end app development",
+      "Lead Full Stack app development",
       "Develop and maintain features and improvements",
     ],
     skills: ["JavaScript", "React", "Node", "NextJS", "Nestjs", "Postgres"],

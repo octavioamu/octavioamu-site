@@ -6,9 +6,6 @@ import Header from "./components/ui/Header";
 import jobList from "./data/jobData";
 import projects from "./data/projectData";
 
-export const metadata: Metadata = {
-  title: "Octavio Amuchástegui CV 2024",
-};
 
 export default function Home() {
   return (
@@ -29,7 +26,7 @@ export default function Home() {
             </p>
           </div>
           <div className="">
-            <div className="worklet-canvas flex-shrink-0 "></div>
+            <div className="worklet-canvas flex-shrink-0"></div>
             <div className="mt-3 text-sm italic">
               Bauhaus generative css art with houdini
             </div>
