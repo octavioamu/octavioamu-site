@@ -1,5 +1,32 @@
-import random from "https://cdn.skypack.dev/random";
-import seedrandom from "https://cdn.skypack.dev/seedrandom";
+/** Mulberry32: tiny deterministic PRNG; returns floats in [0, 1). */
+function mulberry32(initial) {
+  let a = initial >>> 0;
+  return function next() {
+    a += 0x6d2b79f5;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function seedToUint32(seed) {
+  const n = Number.parseInt(String(seed), 10);
+  if (Number.isFinite(n)) return n >>> 0;
+  const s = String(seed);
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+/** Inclusive integer in [min, max]; matches typical `random.int` behavior. */
+function randomInt(rng, min, max) {
+  if (max < min) return min;
+  return Math.floor(rng() * (max - min + 1)) + min;
+}
 
 class BauhausPattern {
   static get inputProperties() {
@@ -19,10 +46,7 @@ class BauhausPattern {
     const seed = props.get("--pattern-seed").value;
     const colors = props.getAll("--pattern-colors").map((c) => c.toString());
 
-    // seed to integer
-    const seedInteger = Number(parseInt(seed.toString()));
-
-    random.use(seedrandom(seedInteger));
+    const rng = mulberry32(seedToUint32(seed));
 
     this.scaleCtx(ctx, patternSize, patternSize, width, height);
 
@@ -30,7 +54,8 @@ class BauhausPattern {
 
     for (let x = 0; x < patternSize; x += cellSize) {
       for (let y = 0; y < patternSize; y += cellSize) {
-        const color = colors[random.int(0, colors.length - 1)];
+        const color =
+          colors[randomInt(rng, 0, Math.max(0, colors.length - 1))];
         ctx.fillStyle = color;
 
         const cx = x + cellSize / 2;
@@ -42,9 +67,9 @@ class BauhausPattern {
           "rectangle",
           "triangle",
           "arcquarter",
-        ][random.int(0, 4)];
+        ][randomInt(rng, 0, 4)];
 
-        const rotationDegrees = [0, 90, 180][random.int(0, 2)];
+        const rotationDegrees = [0, 90, 180][randomInt(rng, 0, 2)];
 
         ctx.save();
 
