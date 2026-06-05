@@ -182,7 +182,7 @@ const jobList = [
   },
   {
     id: 8,
-    title: "Senior Software Engineer",
+    title: "Lead Software Engineer",
     company: ["Baton Corporation"],
     companyLogos: [
       {

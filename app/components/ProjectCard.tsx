@@ -3,7 +3,7 @@ import { Projects } from "../data/projectData";
 import Tag from "./Tag";
 const ProjectCard = ({ project }: { project: Projects }) => {
   return (
-    <article className="flex flex-col md:flex-row gap-4 mt-8 items-start">
+    <article className="flex flex-col md:flex-row gap-4 p-4 bg-orange-100 items-center">
       <div className="">
         <h3 className="font-bold text-2xl">{project.title}</h3>
         {project.link && (

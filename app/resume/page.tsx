@@ -40,7 +40,7 @@ export default function Resume() {
         </div>
         <div className="p-8">
           <p>
-            I&apos;m a front-end developer with over a decade of experience,
+            I&apos;m a full-stack developer with high front-end skills with over a decade of experience,
             always hungry to learn more. I&apos;ve called Argentina, Spain, and
             now Belo Horizonte, Brazil, home. I&apos;ve worked on projects for
             both small businesses and big names.
@@ -50,10 +50,7 @@ export default function Resume() {
             cutting edge. I initially studied graphic design to boost the visual
             appeal of my development work.
           </p>
-          <p>
-            My working permits cover Europe, Brazil, and Argentina, giving me
-            flexibility to work across borders.
-          </p>
+        
         </div>
 
         <div className="px-8 mb-8">

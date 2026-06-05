@@ -36,8 +36,8 @@ const projects = [
     title: "Bonds",
     company: "Mantle",
     description:
-      "By the complexity of the DAO and the big treasury, transparency is a must.The solution was to create and api to keep track of the different tokens in the ethereum, L2, and LPs agreggating all this data in a good public api.",
-    images: ["/projects/mantle-l.png"],
+      "Dapp to create and manage bonds pairs and manage the liquidity of the bonds.",
+    images: ["/projects/bonds-app-detail.png"],
     stack: ["nextjs", "wagmi", "graphql"],
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     title: "Treasury monitor",
     company: "Mantle",
     description:
-      "By the complexity of the DAO and the big treasury, transparency is a must.The solution was to create and api to keep track of the different tokens in the ethereum, L2, and LPs agreggating all this data in a good public api.",
+      "As one of the biggest treasuries and governance project in the ecosystem, we needed an app to show transparency on the use of assets, with onchain data and pivot tables to show the DAO finances.",
     images: ["/projects/treasury-monitor.png"],
     stack: [
       "Nextjs",

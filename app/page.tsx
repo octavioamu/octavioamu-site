@@ -41,7 +41,7 @@ export default function Home() {
       <section className="container mx-auto mb-20 px-8">
         <h2 className="text-4xl">Lastest projects</h2>
         <p className="text-lg">Some of my last work and projects.</p>
-        <div className="grid gap-8 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-8">
           {projects.map((project) => (
             <ProjectCard project={project} key={project.id} />
           ))}
